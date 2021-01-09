@@ -1,0 +1,5 @@
+You need a python compiler
+
+visit  tweepy documentation :- http://docs.tweepy.org/en/latest/api.html
+
+This tweepy documentation helps Alot to explore to add more features to your bot.
