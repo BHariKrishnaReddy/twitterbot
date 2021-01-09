@@ -14,14 +14,22 @@ def limit_handler(cursor):
     time.sleep(100)
   
 authentication = tweepy.OAuthHandler(consumer_key,consumer_secret)
+
 authentication.set_access_token(access_token,access_token_secret)
+
 api =tewwpy.API(authentication)
+
 public_tweets =api.home-timeline()
+
 print("This your home page Feed")
 # This for prints your home page feed
+
 for t in public_tweets:
+
   print(t.text)
+
 print("Information about the user")  
+
 print(api.me()) 
 
 '''
@@ -53,6 +61,7 @@ for f in limit_handler(tweepy.Cursor((api.follwers).items()):
     
 
 search_element = "YOUR KEYWORD IN THE POST"  
+
 No.ofTweets = 10 # How many tweets you want loop over
 
 for t in teepy.Cursor(tweepy.Cursor(api.search , search_element).items(No.ofTweets)):
@@ -62,7 +71,7 @@ for t in teepy.Cursor(tweepy.Cursor(api.search , search_element).items(No.ofTwee
   except tweepy.Tweepy.Error as er:
     continue
     # or print(e.reason)
-   except stopIteration:
+  except stopIteration:
     break
   
   
