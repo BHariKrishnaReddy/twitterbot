@@ -24,14 +24,14 @@ for t in public_tweets:
 print("Information about the user")  
 print(api.me()) 
 
-/*
+'''
     you also do like this
     
     user = api.me()
     print(user.name)
     print(user.screen_name)
     print(user.follwers_count)........
-*/
+'''
 
 # follow back you follower
 for f in limit_handler(tweepy.Cursor((api.follwers).items()):
