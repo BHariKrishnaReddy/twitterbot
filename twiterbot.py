@@ -1,6 +1,9 @@
 print('----------------------------------------------------------')
 print('| This  Project done by using TWEEPY in python           |')
 print('| FOR ANY ISSUES IN THIS PROJECT PLEASE RAISE AN ERROR   |')
+print("1. Checks for a particular user in your follwers and follow them back")
+print("2. Checks for a user in your follwers and follows them back")
+print("3. Checks for a particular user followers count in your follwers and follow them back")
 print('----------------------------------------------------------')
 
 import tweepy
@@ -59,10 +62,17 @@ for f in limit_handler(tweepy.Cursor((api.follwers).items()):
   if follower.followers_count() > 10000:
     follower.follow()
     
+print("YOUR KEYWORD IN THE POST TO SEARCH FOR THAT POST IN YOUR HOME FEED")
 
-search_element = "YOUR KEYWORD IN THE POST"  
+spostby=str(input())
+                       
+search_element = spostby 
 
-No.ofTweets = 10 # How many tweets you want loop over
+print("How many tweets you want loop over to search the post")
+
+n=int(input())
+
+No.ofTweets = n # How many tweets you want loop over
 
 for t in teepy.Cursor(tweepy.Cursor(api.search , search_element).items(No.ofTweets)):
   try:
@@ -70,7 +80,7 @@ for t in teepy.Cursor(tweepy.Cursor(api.search , search_element).items(No.ofTwee
     tweet.retweet()    # Retweet the tweet  
   except tweepy.Tweepy.Error as er:
     continue
-    # or print(e.reason)
+    # or print(er.reason)
   except stopIteration:
     break
   
