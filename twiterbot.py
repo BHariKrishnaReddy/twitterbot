@@ -1,10 +1,12 @@
-print('----------------------------------------------------------')
-print('| This  Project done by using TWEEPY in python           |')
-print('| FOR ANY ISSUES IN THIS PROJECT PLEASE RAISE AN ERROR   |')
-print("1. Checks for a particular user in your follwers and follow them back")
-print("2. Checks for a user in your follwers and follows them back")
-print("3. Checks for a particular user followers count in your follwers and follow them back")
-print('----------------------------------------------------------')
+print('-----------------------------------------------------------------------------------------')
+print('| This  Project done by using TWEEPY in python                                          |')
+print('| FOR ANY ISSUES IN THIS PROJECT PLEASE RAISE AN ERROR                                  |')
+print("| 1.Checks for a particular user in your follwers and follow them back                  |")
+print("| 2.Checks for a user in your follwers and follows them back                            |")
+print("| 3.Checks for a particular user followers count in your follwers and follow them back  |")
+print("| 4.Checks for a post provided by a KEYWORD and also by the no.of posts                 |")
+print("| 5.We can retweet and like them too                                                    |")
+print('-----------------------------------------------------------------------------------------')
 
 import tweepy
 import time
