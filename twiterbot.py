@@ -39,7 +39,6 @@ print(api.me())
 
 '''
     you also do like this
-    
     user = api.me()
     print(user.name)
     print(user.screen_name)
